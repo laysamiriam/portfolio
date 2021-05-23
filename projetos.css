@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: white;
+}
+nav{
+    top:0;
+    position: relative;
+    width: 100%;
+    height: 6vw;
+    z-index: 1;
+}
+nav .links{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .foto{
+    width: 50%;
+}
+nav .foto .branco{
+    display: none;
+}
+nav .foto .branco.active{
+    display: block;
+}
+nav .foto .comcor.active{
+    display: block;
+}
+nav .foto .comcor{
+    display: none;
+}
+nav .foto img{
+    height: 3.5vw;
+}
+nav .links .link{
+    display: flex;
+}
+nav .links .link a{
+    padding: 1vw;
+    color: #373533;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+nav .links a:hover{
+    text-decoration: underline 0.5vw #373533; 
+}
+nav .links .link a.active{
+    color: white;
+}
+nav .links .link a.active:hover{
+    text-decoration: underline 0.5vw white; 
+}
+nav .links .contraste{
+    width: 2.1vw;
+    cursor: pointer;
+}
+nav .links .link a:hover{
+    text-decoration: underline 0.5vw #373533; 
+}
+nav .links .link .projeto{
+    text-decoration: underline 0.5vw #8543E3;
+}
+.projetos{
+    margin-left:4.5vw;
+    position: absolute;
+    top: 10vw;
+    display: flex;
+    /* justify-content: center; */
+    height: 32vw;
+    width: 91%;
+    background-color: transparent;
+}
+.projetos .frase{
+    width: 20%;
+    /* background-color: chocolate; */
+    margin: 0 auto 0 auto;
+    /* position: fixed; */
+}
+.projetos .frase .pt1{
+    margin-bottom: 3vw;
+}
+.projetos .frase h2{
+   font-size: 4vw;
+   font-weight: 800;
+   color: #373533;
+}
+.projetos .frase h2 b{
+    color: #8543E3;
+}
+.projetos .cards{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.projetos .cards .card{
+    margin-right: 0.5vw;
+}
+
+.projetos .cards .card img{
+    width: 23vw;
+    height: 23vw;
+
+}
+.image {
+    position:relative;
+    width:23vw;
+    height:23vw;
+   
+}
+.image img {
+    width:100%;
+    vertical-align:top;
+    border-radius: 0.5vw;
+}
+.image:after {
+    border-radius: 0.5vw;
+    content: attr(data-content);
+    color:#fff;
+    position:absolute;
+    width:100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:#8643e398;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+    font-weight: 800;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image:hover:after {
+    opacity:1;
+}

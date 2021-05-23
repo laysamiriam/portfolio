@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laysa Miriam</title>
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="imagens/logotipo branco.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <div class="links">
+            <div class="foto">
+                <img class="branco" src="imagens/com cores2.svg" alt="">
+                <img class="comcor active" src="imagens/com cores.svg" alt="Logotipo da empresa Laysa Miriam">
+            </div>
+            <div class="link">
+                <a href="index.html">Início</a>
+                <a href="https://www.linkedin.com/in/laysamiriam/">LinkedIn</a>
+                <a href="https://www.instagram.com/laysa.miriam/">Instagram</a>
+                <a class="projeto"href="projetos.html">Projetos</a>
+                <svg  class="contraste" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 338 338" style="enable-background:new 0 0 338 338;" xml:space="preserve">
+                <path d="M169,0h-15v0.673C67.814,8.29,0,80.868,0,169s67.814,160.71,154,168.327V338h15c93.187,0,169-75.813,169-169
+                S262.187,0,169,0z M30,169C30,97.423,84.384,38.316,154,30.812v276.377C84.384,299.684,30,240.577,30,169z"/> </svg>
+            </div>
+        </div>
+    </nav>
+
+    <div class="projetos">
+        <div class="frase">
+            <h2 class="pt1">
+                Design<br>
+                with<br>
+                <b>style</b>
+            </h2>
+
+            <h2 class="pt2">
+                Design<br>
+                with<br>
+                <b>smile :) </b>
+            </h2>
+        </div>
+
+        <div class="cards"> 
+            <div class="card">
+                <a href="befast.html">
+                    <div class="image" data-content="Be Fast | UX e UI">
+                        <img src="imagens/BeFast/sacola1.png" alt="">
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a href="maisjobs.html">
+                    <div class="image" data-content="Mais Jobs | UX e UI">
+                        <img src="imagens/BeFast/garrafa.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+            
+           
+            <div class="card">
+                <a href="">
+                    <div class="image" data-content="Mais Jobs">
+                        <img src="imagens/Crop.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+<script>
+
+    //contraste do cabeçalho
+    all= document.querySelector("body");
+    men = document.querySelector("nav");
+    menu = document.querySelectorAll(" nav .links .link a");
+    contraste = document.querySelector("nav .links .link .contraste");
+    logotipoc = document.querySelector("nav .foto .comcor");
+    logotipob = document.querySelector("nav .foto .branco");
+    frases = document.querySelectorAll(".projetos .frase h2");
+
+    function modo_contraste(){
+        //cabeçalho
+        all.style.backgroundColor = "black";
+        contraste.style.fill = "white";
+        men.style.backgroundColor = "black";
+        for(const link of menu){
+            link.style.color="white";
+            link.classList.add("active");
+        }
+        logotipoc.classList.remove("active");
+        logotipob.classList.add("active");
+        for(const frase of frases){
+            frase.style.color="white";
+        }
+    }
+
+    function modo_normal(){
+        all.style.backgroundColor = "white";
+        contraste.style.fill = "#373533";
+        men.style.backgroundColor = "white";
+        for(const link of menu){
+            link.style.color="#373533";
+            link.classList.remove("active");
+        }
+        logotipoc.classList.add("active");
+        logotipob.classList.remove("active");
+        for(const frase of frases){
+            frase.style.color="#373533";
+        }
+    }
+
+    contraste.addEventListener("click",function(){
+        if(contraste.style.fill == "white"){
+            modo_normal();
+        }else{
+            modo_contraste();
+        }
+    })
+
+</script>
+</body>
