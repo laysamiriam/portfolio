@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.cabecalho{
+    position: relative;
+    z-index: 5;
+    height: 45vw;
+    /* background-color: blueviolet; */
+}
+.cabecalho nav{
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    z-index: 1;
+}
+.cabecalho nav .links{
+    display: flex;
+    height: 5vw;
+    padding-right: 2vw;
+    align-items: center;
+    /* justify-items: center; */
+    /* align-content: center; */
+    justify-content: flex-end;
+}
+.cabecalho nav .links .contraste{
+    width: 2.1vw;
+    cursor: pointer;
+}
+.cabecalho nav .links .contraste:hover{
+    opacity: 0.7;
+}
+.cabecalho nav .links a{
+    padding: 1vw;
+    color: #373533;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+.cabecalho nav .links a:hover{
+    text-decoration: underline 0.5vw #373533; 
+}
+.cabecalho nav .links a.active:hover{
+    text-decoration: underline 0.5vw white; 
+}
+.cabecalho nav .links .inicio{
+    text-decoration: underline 0.5vw #8543E3;
+}
+.cabecalho .logotipo{
+    position: absolute;
+    left: 0;
+    top: 0vw;
+    width: 40vw;
+    z-index: 0;
+}
+.cabecalho .logotipo.normal.active{
+    display: none;
+}
+.cabecalho .texto{
+    z-index: 2;
+    position: absolute;
+    width: 97%;
+    text-align: right;
+    top: 20vw;
+}
+.cabecalho .texto strong h2, .cabecalho .texto h2 b{
+    font-weight: 900;
+    font-size: 4.5vw;
+    color: #373533;
+}
+.cabecalho .texto h2 b{
+    color: #8543E3;  
+}
+.oquesou{
+    background-color: white;
+    /* top: 2vw; */
+    position: relative;
+    height: 38vw;
+}
+.oquesou h3{
+    text-decoration: underline 0.5vw #8543E3;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8vw;
+    text-align: center;
+    padding-top:1.5vw;
+    padding-bottom: 1.9vw;
+}
+.oquesou .cards{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.oquesou .cards .card{
+    background-color: #373533;
+    border-radius: 1vw;
+    width: 22%;
+    height: 24vw;
+    margin-right: 1vw;
+    text-align: center;
+}
+.oquesou .cards .card h4{
+    font-weight: 800;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+.oquesou .cards .card p{
+    font-weight: 700;
+    width: 100%;
+    color: white;
+    font-size: 1vw;
+    text-align: left;
+    
+    display: flex;
+    justify-content: center;
+}
+.oquesou .cards .card img{
+    width: 7vw;
+    margin-top: 2.5vw;
+    margin-bottom: 1.2vw;
+}
+.oquefaco{
+    background-color: #8543E3;
+    position: relative;
+    height: 35vw;
+    text-align: left;
+    color: white;
+}
+.oquefaco .conteudo{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 20vw;
+}
+.oquefaco .conteudo .contend{
+    width: 100%;
+}
+.oquefaco .conteudo .saiba-mais{
+    width: 100%;
+}
+.oquefaco .conteudo .contend h3{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.9vw;
+}
+.oquefaco .conteudo .contend strong h4{
+    font-weight: 800;
+    padding-top: 1vw;
+    font-size: 2.6vw;
+}
+.oquefaco .conteudo .contend a{
+    font-weight: 800;
+    display: block;
+    color: white;
+    font-size: 1.6vw;
+    text-decoration: none; 
+}
+.oquefaco .conteudo .saiba-mais a{
+    font-size: 1.7vw;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+.oquefaco .conteudo .saiba-mais a:hover{
+    /* color: #373533; */
+    text-shadow: 0.2vw 0.2vw #3735337c;
+    transition-property: text-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+.oquefaco .conteudo .saiba-mais img{
+    width: 2.3vw;
+    margin-left: 0.2vw;
+}
+.ultimosproj{
+    /* top: 8vw; */
+    height: 40vw;
+    position: relative;
+}
+.ultimosproj .titulo{
+    text-decoration: underline 0.5vw #8543E3;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8vw;
+    text-align: center;
+    padding-top:1.5vw;
+    padding-bottom: 1.9vw;
+    color: #373533;
+    padding-top: 3vw;
+}
+.ultimosproj .cards{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.ultimosproj .card-proj a{
+    text-decoration: none;
+}
+.ultimosproj .card-proj{
+    background-color: #8543E3;
+    border-radius: 1vw;
+    width: 22%;
+    height: 27vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-weight: 800;
+}
+.ultimosproj .card-proj:hover{
+    background-color: #8643e3cb;
+    transition-property: background-color;
+    /* transition-duration: 0.3s; */
+    transition-timing-function: ease-in;
+    
+    box-shadow: 0.2vw 0.2vw 0.2vw 0.2vw #37353346;
+}
+.ultimosproj img{
+    width: 20vw;
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+    margin-bottom: 0.8vw;
+}
+.ultimosproj .card-proj a .info{
+    text-align: left;
+    margin-left: 1vw;
+}
+.ultimosproj .card-proj a .info h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3vw;
+}
+.ultimosproj .card-proj a .info h3{
+    color: #373533;
+    margin-top: 0;
+    font-size: 1.1vw;
+}
+.ultimosproj .card-proj a .info p{
+    margin-top: 0.8vw;
+    font-size: 1.1vw;
+    color: white;
+}
+.contato{
+    height: 32vw;
+    position: relative;
+    background-color: #373533;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contato .infos{
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+.contato .infos h2{
+    font-size: 3vw;
+    padding-bottom: 1.5vw;
+}
+.contato .infos a{
+    text-decoration: underline 0.5vw #8543E3;
+    color: white;
+    font-size: 1.6vw;
+}
+.contato .infos a:hover{
+    text-decoration: none;
+    border: 0.5vw solid #8543E3;
+    background-color: #8543E3;
+    color: white;
+    transition: background-color 0.3s ease-in;
+}
+.contato img{
+    height: 70%;
+}
+.top{
+    height: 8vw;
+    position: relative;
+    background-color: #8543E3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.top img{
+    width: 1.3vw;
+    cursor: pointer;
+}
+.top img:hover{
+    animation: anima 1500ms ease infinite;
+}
+@keyframes anima {
+    to{
+        opacity: 0.1;
+        transform: scale(0.85) translateY(20px);
+    }
+}
+footer{
+    background-color:white;
+    height: 13vw;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    z-index: 6;
+    position: relative;
+}
+footer .esq img{
+    width: 14vw;
+}   
+footer .esq .logo.active{
+    display: flex;
+}
+footer .esq .logo{
+    display: none;
+}
+footer .esq .logo-branco.active{
+    display: flex;
+}
+footer .esq .logo-branco{
+    display: none;
+}
+footer .esq p{
+    font-weight: 600;
+    font-size: 0.76vw;
+}
+footer .dire{
+    height: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+footer .dire .menu1{
+    margin-bottom: 0.5vw;
+    width: 20%;
+}
+footer .dire .menu1 p, footer .dire .menu2 p{
+    color: #8543E3;
+    font-size: 1vw;
+    font-weight: 700;
+    height: 30%;
+    display: block;
+}
+footer .dire .menu1 a{
+    color: #373533;
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    height: 90%;
+    width: 30%;
+}
+footer .dire .menu1 a:hover{
+    text-decoration: underline 0.2vw #8543E3;
+}
+footer .dire .menu2 .links2{
+    display: flex;
+    width: 40%;
+}
+footer .dire .menu2 a{
+    display: flex;
+}
+footer .dire .menu2 a img{
+    width: 2vw;
+    /* height: 90% */
+    padding-right: 0.2vw;
+    border-radius: 0.3vw
+}
+footer .dire .menu2 a img:hover{
+    width: 1.8vw;
+    box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw #8643e39a;
+}
